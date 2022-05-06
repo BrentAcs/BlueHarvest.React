@@ -6,14 +6,17 @@ const Header = () => {
 
   return (
     <nav>
-      <NavLink end to='/' activestyle={{fontWeight: "bold"}}>
+      <NavLink end to="/" activestyle={{ fontWeight: "bold" }}>
         Home
       </NavLink>
-      {' | '}
-      <NavLink to='/about' activestyle={{fontWeight: "bold"}}>
+      {" | "}
+      <NavLink to="/starclusters" activestyle={{ fontWeight: "bold" }}>
+        Star Clusters
+      </NavLink>
+      {" | "}
+      <NavLink to="/about" activestyle={{ fontWeight: "bold" }}>
         About
       </NavLink>
-
 
       {/*{' | '}*/}
       {/*<NavLink to='/starClusters' activeStyle={activeStyle}>*/}

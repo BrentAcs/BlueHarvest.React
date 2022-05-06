@@ -1,6 +1,6 @@
-import React from 'react';
-import {Routes, Route} from 'react-router-dom';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
 import Header from "./components/common/Header";
 import PageNotFound from "./PageNotFound";
 import AboutPage from "./components/about/AboutPage";
@@ -11,12 +11,12 @@ function App() {
 
   return (
     <div className="App container-fluid">
-      <Header/>
+      <Header />
       <Routes>
-        <Route path='/' exact element={<HomePage/>}/>
-        <Route path='/about' element={<AboutPage/>}/>
-        {/*<Route path='/courses' component={CoursesPage} />*/}
-        <Route path="*" element={<PageNotFound/>}/>
+        <Route path="/" exact element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        {/* <Route path="/starclusters" element={StarClusterView} /> */}
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );
